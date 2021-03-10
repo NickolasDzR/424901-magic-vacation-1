@@ -281,3 +281,23 @@ $rulesItemNum: 4;
     color: #5f458c;
   }
 }
+
+
+.text-animation {
+  &__wrp {
+    margin: 0 5px;
+    display: inline-block;
+    overflow: hidden;
+  }
+  &__item {
+    transform: translate3d(0, 1em, 0);
+    display: inline-block;
+    animation: letterAnimation forwards;
+  }
+}
+
+@keyframes letterAnimation {
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
